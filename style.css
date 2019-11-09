@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+    Font-size: 18px;
+}
+
+p {
+
+    color: hsl(229, 8%, 60%)
+}
+
+.header {
+    margin: 35px auto;
+    width: 85%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: hsl(229, 8%, 60%);
+}
+
+li:hover {
+    color: hsl(0, 94%, 66%);
+    transition: 0.5s ease-out;
+}
+
+li:last-child {
+    background-color: hsl(0, 94%, 66%);
+    display: block;
+    padding: 14px 35px;
+    color: white;
+    border-radius: 5px;
+    margin-top: -12px;
+}
+
+li:last-child:hover {
+    background-color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    padding: 12px 33px;
+    transition: 0.5s ease-out;
+
+}
+
+#hamburger {
+    display: none;
+}
+
+
+.intro {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: 70px auto;
+    width: 85%;
+}
+
+.introtext {
+    margin-top: 70px;
+}
+
+.introtext h2 {
+    font-size: 40px;
+    color: hsl(229, 31%, 21%);
+}
+
+.introtext p {
+    padding: 20px 0;
+}
+
+.introbuttons button {
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.getonchrome {
+    background: hsl(231, 69%, 60%);
+    box-shadow: 1px 1px 5px grey;
+    color: white;
+}
+
+.getonchrome:hover {
+    background: none;
+    border: 1px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+    transition: 0.5s ease-out;
+}
+
+.getonfirefox {
+    background: whitesmoke;
+    box-shadow: 1px 1px 5px grey;
+    margin-left: 9px;
+}
+
+.getonfirefox:hover {
+    border: 1px solid hsl(229, 31%, 21%);
+    transition: 0.5s ease-out;
+}
+
+.introimage img {
+    width: 750px;
+}
+
+.featurescontainer {
+    margin: 35px auto;
+    width: 85%;
+}
+
+.featurescontainer h3 {
+    text-align: center;
+    font-size: 25px;
+    color: hsl(229, 31%, 21%);
+}
+
+.featurescontainer p {
+    margin: 20px auto;
+    width: 430px;
+    text-align: center;
+}
+
+.featurestitles {
+    text-align: center;
+    margin: 30px 0 47px 0;
+}
+
+.featurestitles a {
+    text-decoration: none;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    padding: 20px;
+    color: hsl(229, 8%, 60%);
+    transition: 0.8s ease-out;
+}
+
+.featurestitles a:active,
+.featurestitles a:focus,
+.featurestitles a:hover {
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+.feature {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    transition: 0.8s ease-out;
+    border: none;
+}
+
+#bookmarking {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    width: 90%;
+    transition: 0.8s ease-out;
+    justify-content: space-between
+}
+
+#searching {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: auto;
+    width: 90%;
+    transition: 0.8s ease-out;
+    justify-content: space-between
+}
+
+#sharing {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    transition: 0.8s ease-out;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between
+}
+
+.feature img {
+    width: 400px
+}
+
+.bookmarktext {
+    margin-top: 80px;
+    width: 500px;
+    text-align: justify
+}
+
+.bookmarktext button {
+    border: none;
+    color: white;
+    background: hsl(231, 69%, 60%);
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    margin-left: 40%
+}
+
+.downloadextension {
+    margin: 170px auto;
+    width: 70%;
+    height: auto;
+}
+
+.downloadextension h3 {
+    text-align: center;
+}
+
+.downloadextension p {
+    text-align: center;
+    margin: 20px auto;
+    width: 430px;
+}
+
+.extensions {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+
+.chrome {
+    box-shadow: 1px 1px 5px grey;
+    width: 300px;
+    text-align: center;
+    padding: 15px
+}
+
+.firefox {
+    box-shadow: 1px 1px 5px grey;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(50px);
+}
+
+.opera {
+    box-shadow: 1px 1px 5px grey;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(70px);
+}
+
+.extensions p {
+    width: 200px
+}
+
+.extensions button {
+    color: white;
+    background: hsl(231, 69%, 60%);
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    margin-top: 8px;
+}
+
+.extensions button:hover {
+    background: none;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+    transition: 0.5s ease;
+}
+
+.extensions h4 {
+    padding-top: 10px
+}
+
+.faq {
+    margin: 175px auto;
+    width: 40%;
+}
+
+.faq h3 {
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.item h3:hover {
+    color: hsl(0, 94%, 66%)
+}
+
+.faqitemflex img:hover {
+    color: hsl(0, 94%, 66%)
+}
+
+.faq p {
+    text-align: center;
+    margin: auto;
+    width: 500px
+}
+
+.faq button {
+    color: whitesmoke;
+    background: hsl(231, 69%, 60%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    text-align: center;
+    margin-left: 40%;
+
+}
+
+.item img {
+    float: right;
+    margin-top: -39px;
+    cursor: pointer;
+}
+
+.item p {
+    display: none;
+    margin: -10px 0 0 0;
+}
+
+.contactus {
+    background: hsl(231, 69%, 60%);
+    height: 400px;
+}
+
+.contactus p {
+    text-align: center;
+    padding-top: 85px;
+    color: white;
+    font-size: 25px
+}
+
+.contactus h2 {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 40px
+}
+
+.contactcontent {
+    margin: auto;
+    width: 600px;
+    margin-top: 50px
+}
+
+.input {
+    margin: auto;
+    width: 390px;
+    display: flex;
+    margin-top: 25px;
+    position: relative;
+}
+
+#input {
+    border: none;
+    border-radius: 7px;
+    color: hsl(229, 8%, 60%);
+    padding: 15px 35px;
+}
+
+.input button {
+    color: whitesmoke;
+    background: hsl(231, 69%, 60%);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    background: hsl(0, 94%, 66%);
+    padding: 10px 35px;
+    margin-left: 7px;
+    width: 400px
+}
+
+.input button:hover {
+    background: white;
+    border: 1px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+#input:focus {
+    border: 3px solid hsl(0, 94%, 66%);
+}
+
+.error {
+    background: hsl(0, 94%, 66%);
+    color: white;
+    position: absolute;
+    font-size: 11px;
+    top: 45px;
+    padding: 0 42px;
+    border-radius: 5px;
+    display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: hsl(229, 31%, 21%);
+}
+
+.menufooter span {
+    color: white;
+    margin: 10px;
+}
+
+.menufooter span:hover {
+    color: hsl(0, 94%, 66%)
+}
+
+.social {
+    color: white;
+}
+
+.social:hover {
+    color: hsl(0, 94%, 66%)
+}
+
+.social .fa-twitter {
+    margin-left: 7px;
+}
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width:1044px) {
+
+
+    .introimage img {
+        width: 450px;
+    }
+
+
+    .introtext {
+        margin-top: 50px;
+    }
+
+    .downloadextension {
+
+        width: 90%;
+
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:780px) {
+
+    li {
+        font-size: 13px
+    }
+
+    .introimage img {
+        width: 300px;
+        height: 400px
+    }
+
+    .introtext h2 {
+        font-size: 35px
+    }
+
+    .extensions {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature {
+        flex-direction: column;
+        overflow-x: scroll;
+
+    }
+
+    .contactus p {
+
+        font-size: 20px
+    }
+
+    .contactus h2 {
+
+        font-size: 30px
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    body {overflow-x: hidden;}
+    
+    .nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        background: rgb(82, 11, 82, 0.8);
+        height: 100vh;
+        width: 100%;
+        display: none;
+    }
+    
+ul {
+    flex-direction: column;
+    margin: 80px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    border-top: 0.1px solid white;
+    border-bottom: 0.1px solid white;
+    padding: 19px;
+    width: 100%;
+    text-align: center;
+}
+li:last-child {
+
+    margin-top: 15px;
+}
+
+
+
+.logo{
+    z-index: 9999;
+    margin-left: 20px;
+}
+
+
+    #hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        z-index: 5;
+    }
+
+    .intro {
+        flex-direction: column-reverse
+    }
+
+    .introimage img {
+        width: 370px;
+        
+    }
+    .introtext {
+        margin-top: 0px;
+    }
+
+    .featurescontainer {
+        width: 90%;
+    }
+    
+    
+    .featurescontainer p {
+        width: 300px;
+    }
+
+.featurestitles {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+
+    overflow-y: scroll;
+  height: 500px;
+}
+
+#bookmarking {
+    flex-direction: column;
+    margin-bottom: 18px
+
+}
+
+#searching {
+    flex-direction: column;
+    margin-bottom: 18px
+}
+
+#sharing {
+    flex-direction: column;
+    margin-bottom: 18px
+}
+
+.feature img {
+    width: 340px
+}
+
+.bookmarktext {
+    margin-top: 20px;
+    margin-left: -20%;
+    
+}
+
+.bookmarktext button {
+    border: none;
+    color: white;
+    background: hsl(231, 69%, 60%);
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    margin-left: 40%
+}
+
+.downloadextension{margin-top: 28px}
+
+.downloadextension p {width: 300px}
+
+.faq {
+    width: 80%;
+}
+
+.faq h3 {
+    font-size: 25px;
+}
+
+.item h3 {
+    font-size: 17px;
+}
+
+.faq p {
+    
+    width: 350px
+}
+
+.faq button {
+    margin-top: 19px;
+
+
+
+}
+.contactus {
+    background: hsl(231, 69%, 60%);
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.contactus p {
+    padding-top: 45px;
+    
+    font-size: 20px
+}
+
+.contactus h2 {
+    padding-top: 25px;
+    font-size: 28px
+}
+
+.contactcontent {
+    overflow-x: hidden;
+    margin: auto;
+    width: 370px;
+    margin-top: -80px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+
+.input button {
+    margin-left: 5px;
+    padding: 9px 20px;
+    width: 200px
+
+}
+
+.footer {
+  
+    font-size: 13px
+}
+
+.menufooter span {
+    margin: 7px;
+}
+
+
+.attribution {
+    font-size: 13px;
+    padding: 20px;
+}
+
+
+}
