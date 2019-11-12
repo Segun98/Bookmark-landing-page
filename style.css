@@ -14,6 +14,7 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: whitesmoke;
     Font-size: 18px;
+    scroll-behavior: smooth
 }
 
 p {
@@ -157,6 +158,7 @@ li:last-child:hover {
     padding: 20px;
     color: hsl(229, 8%, 60%);
     transition: 0.8s ease-out;
+    scroll-behavior: smooth
 }
 
 .featurestitles a:active,
@@ -164,6 +166,7 @@ li:last-child:hover {
 .featurestitles a:hover {
     border-bottom: 4px solid hsl(0, 94%, 66%);
     color: hsl(0, 94%, 66%);
+    scroll-behavior: smooth
 }
 
 .feature {
