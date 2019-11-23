@@ -13,7 +13,7 @@ function ValidateEmail(e) {
     } else {
         error.style.display = "block";
     }
-
+   setTimeout(() => {error.style.visibility ="hidden"}, 3000);
 
 }
 
