@@ -2,7 +2,9 @@ var button = document.getElementById('submit').addEventListener("click", Validat
 var field = document.getElementById('input')
 
 
-function ValidateEmail() {
+function ValidateEmail(e) {
+     
+     e.preventDefault();
 
     var error = document.querySelector('.error');
 
