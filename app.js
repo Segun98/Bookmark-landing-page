@@ -7,13 +7,14 @@ function ValidateEmail(e) {
      e.preventDefault();
 
     var error = document.querySelector('.error');
+  setTimeout(() => {error.style.display ="none"}, 5000);
+
 
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(field.value)) {
         return (true)
     } else {
         error.style.display = "block";
     }
-   setTimeout(() => {error.style.visibility ="hidden"}, 3000);
 
 }
 
